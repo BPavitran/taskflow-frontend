@@ -49,6 +49,20 @@ npm run dev
 App will run on:
 http://localhost:5173
 
+## 🐳 Run the Application with Docker
+
+Build Docker image:
+
+```bash
+docker build --build-arg VITE_API_BASE_URL=http://localhost:3000 -t taskflow-frontend .
+```
+
+Run container:
+
+```bash
+docker run --name taskflow-frontend  -p 5173:5173 taskflow-frontend
+```
+
 ## 📌 Notes
 
 - Backend API should be running before starting the frontend
