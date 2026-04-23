@@ -37,7 +37,7 @@ cp .env.example .env
 Update values if needed:
 
 ```env
-VITE_API_URL=http://localhost:3000
+VITE_API_BASE_URL=http://localhost:3000
 ```
 
 ### 3. Run the application
